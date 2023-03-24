@@ -1,0 +1,40 @@
+/* grid container
+element pembungkus grid, didefinisikan dengan menuliskan :
+display : grid; */
+
+/* grid item
+element-element yang berada 1level di dalam grid container */
+
+/* grid line
+garis horizontal (kolom) atau vertikal (baris) yang memisahkan grid menjadi beberapa bagian dan ditandai dengan angka*/
+
+/* grid cell
+perpotongan / pertemuan antara baris dan kolom di dalam grid*/
+
+/* grid area
+kumpulan atau lebih dari satu grid cell yang bentuk kotak */
+
+/* grid track
+ukuran / jarak antara 2 grid line, bisa horizontal (kolom(width)) atau vertikal (baris(height)) */
+
+/* grid gap
+ukuran jarak antara grid track / cell-nya*/
+
+.container {
+  width: 800px;
+  height: 200px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+}
+
+.item {
+  background-color: chartreuse;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

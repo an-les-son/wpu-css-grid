@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-areas: "container item";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.grid-container {
+  grid-area: container;
+  border: 3px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  grid-area: item;
+  border: 3px solid red;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.unlist {
+  list-style: none;
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 1.3em;
+}
+
+.center-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* css grid all properti */
+/* grid-template-colums & grid-template-rows*/
+.container-template-colrow {
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 0.8em;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+
+/* css for all item */
+
+.item1 {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item2 {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
