@@ -36,7 +36,6 @@ body {
 .center-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
 }
 
 /* css grid all properti */
@@ -46,9 +45,33 @@ body {
   height: 50px;
   color: white;
   font-size: 0.8em;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 2fr 1fr 2fr;
+}
+
+/* grid-auto-colums & grid-auto-rows*/
+.container-auto-colrow {
+  width: 150px;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-auto-rows: 2fr;
+}
+
+/* grid-auto-flow*/
+.container-auto-flow {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 10px 20px 30px;
+  grid-auto-flow: column; /* merubah baris menjadi column atau sebaliknya seperti pada properti "flex-direction" */
+  grid-auto-columns: 25px;
 }
 
 /* css for all item */
