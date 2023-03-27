@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Delicious Handrawn", cursive;
+  background-color: rgb(216, 214, 214);
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 50px 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  /* border: 10px solid white; */
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+  width: 30%;
+  margin: auto;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
