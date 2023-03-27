@@ -88,7 +88,6 @@ body {
 .container-template-colrow-minmax {
   width: 150px;
   color: white;
-  border: 1px solid black;
   font-size: 0.8em;
   margin-bottom: 10px;
   display: grid;
@@ -118,6 +117,40 @@ body {
   grid-auto-columns: 25px;
 }
 
+/* grid template areas */
+.container-template-areas {
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar content content";
+}
+
+/* grid template */
+.container-grid-template {
+  width: 150px;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template: 20px 30px / 1fr 2fr 3fr;
+}
+
+/* grid gap */
+.container-grid-gap {
+  width: 150px;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template: 20px 30px / 1fr 2fr 3fr;
+  grid-gap: 3px;
+}
+
 /* css for all item */
 
 .item1 {
@@ -132,4 +165,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: red;
+}
+
+.content {
+  grid-area: content;
+  background-color: yellow;
 }
