@@ -62,6 +62,39 @@ body {
   grid-template-columns: repeat(9, 1fr);
 }
 
+/*min max content value*/
+.container-template-colrow-minmaxcontent {
+  width: 150px;
+  height: 20px;
+  color: white;
+  font-size: 0.8em;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+}
+
+/*auto fill fit value*/
+.container-template-colrow-autofillfit {
+  width: 150px;
+  color: white;
+  border: 1px solid black;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+}
+
+/*minmax value*/
+.container-template-colrow-minmax {
+  width: 150px;
+  color: white;
+  border: 1px solid black;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: minmax(30px, 50px);
+}
+
 /* grid-auto-colums & grid-auto-rows*/
 .container-auto-colrow {
   width: 150px;
